@@ -1,3 +1,14 @@
 .fondo{
     background-color: yellow
 }
+.biografia{
+    color: red;
+    text-align: center;
+}
+.img{
+    text-align: left;
+}
+.img2{
+    width: 600px;
+    border-radius: 20px;
+}
