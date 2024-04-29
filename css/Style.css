@@ -22,17 +22,15 @@
     --text_paragraph: 16px;
     --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
 }
-
-/*Header*/
-
-header{
+header {
     width: 100%;
     height: 100px;
     position: fixed;
     z-index: 100;
+    background-color: #656565ea;
 }
 
-.container_header{
+.container_header {
     max-width: 1200px;
     height: 100%;
     margin: auto;
@@ -49,16 +47,17 @@ header{
     z-index: 1;
 }
 
-.logo img{
-    width: 150px;
+.logo img {
+    width: 100px;
+    height: 100px;
 }
 
-.menu{
+.menu {
     display: flex;
     align-items: center;
 }
 
-.menu nav{
+.menu nav {
     margin: 0px 20px;
 }
 
@@ -72,29 +71,29 @@ header{
 }
 
 .menu nav ul li a{
-    color: var(--color_text-secundary);
+    color: white;
     font-size: var(--lowText_font_size);
     position: relative;
 }
 
 .menu nav ul li a:hover{
-    color: var(--color_text-primary);
+    color:#00aeff;
 }
 
 .btn_quote{
     display: block;
     padding: 8px 40px;
-    border: 2px solid var(--color_text-primary);
+    border: 4px solid white;
     border-radius: 8px;
     font-weight: 500;
-    color: var(--color_text-tertiary);
+    color: white;
     margin: 0px 20px;
     transition: all 300ms;
 }
 
 .btn_quote:hover{
     color: white;
-    background: var(--color_text-primary);
+    background:#f1f1f1;
 }
 
 .menu .socialMedia{
@@ -105,24 +104,21 @@ header{
     margin: 0px 4px;
 }
 
-.menu .socialMedia img{
+.menu .socialMedia i{
     width: 20px;
+    color: white;
 }
-
-/*End Header*/
-
-/*Portada Inicio*/
 
 .container__cover{
     padding-top: 100px;
     padding-bottom: 100px;
-    background: var(--main_color-secundary);
+    background: #575757ea;
 }
 
 .cover{
     max-width: 1200px;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     align-items: center;
     padding: 0px 20px;
@@ -135,34 +131,34 @@ header{
 
 .text__cover h1{
     font-size: 50px;
-    color: var(--color_text-secundary);
+    color:white;
 }
 
 .text__cover p{
     font-size: var(--text_paragraph);
     margin-top: 40px;
-    color: var(--color_text-tertiary);
+    color: white;
 }
 
 .btn__text{
     display: block;
-    width: 200px;
+    width: 150px;
     margin-top: 40px;
     padding: 10px 20px;
     text-align: center;
     font-weight: 500;
-    background: var(--main_color-primary);
+    background: #666666ea;
     color: white;
     border-radius: 8px;
-    border: 2px solid transparent;
+    border: 4px solid white;
     cursor: pointer;
     transition: all 300ms;
 }
 
 .btn__text:hover{
-    background: transparent;
-    border: 2px solid var(--main_color-primary);
-    color: var(--color_text-tertiary);
+    background: #000000;
+    border: 4px solid white;
+    color: white;
 }
 
 .image__cover{
@@ -170,14 +166,8 @@ header{
 }
 
 .image__cover img{
-    width: 900px;
-    padding-bottom: 150px;
+    width: 550px;
 }
-
-/*End Portada Inicio*/
-
-/*Estilos Generales Cards*/
-
 .container__card-primary{
     padding-top: 100px;
 }
@@ -221,6 +211,7 @@ header{
     border-radius: 20px;
     margin: 14px;
     transition: all 300ms;
+    background-image: url(../img/cr7img.jpg);
 }
 
 .box__card-primary:hover{
@@ -239,3 +230,104 @@ header{
 }
 
 /*End Estilos Generales Cards*/
+.cover__bottom{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px; 
+}
+
+.image__coverbottom{
+    border: 1px solid transparent;
+    max-width: 350px;
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin: 14px;
+    transition: all 300ms;
+    margin-top: 40px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+.box__card-primary img{
+    width: 100px;
+    height: 100px;
+    margin: 0px 0px 0px 80px;
+}
+.iconarrow{
+    margin: 0px 0px 0px 130px;
+}
+.iconarrow :hover{
+    cursor: pointer;
+}
+.tittle-cards{
+    max-width: 800px;
+    margin: auto;
+}
+
+.tittle-cards p{
+    font-size: 20px;
+    color: blueviolet;
+    font-weight: 500;
+    text-align: center;
+    
+}
+.tittle-cards h1{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.container-card {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    flex-wrap: wrap; /* Asegura que los elementos se envuelvan a la siguiente línea */
+}
+
+.card-person {
+    width: calc(25% - 40px); /* 25% para mostrar 4 cartas */
+    margin: 20px;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #ffffff;
+    cursor: default;
+    display: flex;
+    flex-direction: column; /* Para que el contenido se alinee verticalmente */
+    justify-content: center;
+    align-items: center;
+}
+
+.card-person img {
+    width: 100%;
+    height: auto; /* Evita que la imagen se estire */
+    border-radius: 25px 25px 0 0; /* Para que la esquina superior de la imagen sea redondeada */
+}
+
+.card-person .content-person {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-person .content-person p {
+    line-height: 1.5;
+}
+
+.card-person .content-person h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.card-person .content-person a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+}
